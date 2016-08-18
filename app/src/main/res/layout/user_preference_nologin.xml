@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".Userpreference">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LAZER"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Choose channels you like please:"
+            android:textSize="60px"
+            android:layout_marginTop="10dp"
+            android:id="@+id/introduction"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/introduction"
+
+            android:id="@+id/Technology"
+            android:background="@drawable/btn_shape"
+            android:text="Technology"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Technology"
+            android:layout_marginLeft="40dp"
+            android:layout_alignBottom="@id/Technology"
+            android:id="@+id/Entertainment"
+            android:background="@drawable/btn_shape"
+            android:text="Entertainment" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/Technology"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Economy"
+            android:background="@drawable/btn_shape"
+            android:text="Economy" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/Economy"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/Economy"
+            android:id="@+id/Weather"
+            android:background="@drawable/btn_shape"
+            android:text="Weather" />
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_below="@id/Technology"-->
+        <!--android:id="@+id/Entertainment"-->
+        <!--android:background="@drawable/btn_shape"-->
+        <!--android:text="Entertainment" />-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/Weather"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/Weather"
+            android:id="@+id/Education"
+            android:background="@drawable/btn_shape"
+            android:text="Education" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/Economy"
+            android:layout_marginTop="20dp"
+            android:id="@+id/News"
+            android:background="@drawable/btn_shape"
+            android:text="News" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/News"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/News"
+            android:id="@+id/Sport"
+            android:background="@drawable/btn_shape"
+            android:text="Sport" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/Sport"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/Sport"
+            android:id="@+id/Test"
+            android:background="@drawable/btn_shape"
+            android:text="Test" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/News"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Game"
+            android:background="@drawable/btn_shape"
+            android:text="Game" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@id/Game"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/Game"
+            android:id="@+id/Outdoor"
+            android:background="@drawable/btn_shape"
+            android:text="Outdoor" />
+
+    </RelativeLayout>
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:layout_marginTop="200dp"-->
+    <!--android:id="@+id/Technology"-->
+    <!--android:background="@drawable/btn_shape"-->
+    <!--android:text="Technology"/>-->
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:layout_toRightOf="@id/Technology"-->
+    <!--android:id="@+id/Economy"-->
+    <!--android:background="@drawable/btn_shape"-->
+    <!--android:text="Economy"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/user_show_dialog_btn"-->
+    <!--android:layout_width="match_parent" android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="100dp"-->
+    <!--android:layout_marginLeft="280dp"-->
+    <!--android:text="30min"-->
+    <!--/>-->
+
+
+
+</android.support.design.widget.CoordinatorLayout>

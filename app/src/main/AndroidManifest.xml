@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jsonrss_test_1" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".FBLogin"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Userpreferencenologin"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Userpreference"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".FeedListActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".FeedListActivitynologin"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".FeedDetailsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Proverb"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Proverbnologin"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".FeedListActivity" />-->
+        </activity>
+        <activity android:name=".EndActivity"></activity>
+        <activity android:name=".Logout"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Logoutnologin"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.amazon.identity.auth.device.authorization.AuthorizationActivity"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoDisplay" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="amzn" android:host="com.amazonaws.cognito.sync.demo"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

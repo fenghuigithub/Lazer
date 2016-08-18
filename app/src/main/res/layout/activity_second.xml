@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".NextActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar1"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SETTINGS"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/setting" />
+
+    <!--<android.support.design.widget.FloatingActionButton android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"-->
+    <!--android:src="@android:drawable/ic_dialog_email" />-->
+<!--<ListView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:divider="@drawable/list_item_divider"-->
+    <!--android:id="@+id/itemlist">-->
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="SHOW COUNTDOWN"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="NOTIFICATION"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="COOLDOWN INTERVAL"/>-->
+<!--</ListView>-->
+
+
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:divider="@drawable/list_item_divider"
+
+        android:dividerHeight="1dp"
+        android:id="@+id/itemlist_user">
+
+    </ListView>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:divider="@drawable/list_item_divider"
+
+        android:dividerHeight="1dp"
+        android:id="@+id/itemlist">
+
+    </ListView>
+    <ToggleButton
+        android:id="@+id/mTogBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/toggle_btn"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+    <ToggleButton
+        android:id="@+id/mTogBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="180dp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/toggle_btn"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+    <Button
+        android:id="@+id/main_show_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="280dp"
+        android:text="30min"
+        />
+
+    <!--<view-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="1px"-->
+        <!--android:layout_marginTop="500dp"-->
+        <!--android:background="@drawable/divider"-->
+        <!--android:id="@+id/finaldivider">-->
+
+    <!--</view>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:id="@+id/rect"
+        android:background="@drawable/btn_shape"/>
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="500dp"-->
+        <!--android:id="@+id/time_setting"/>-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="295dp"
+        android:layout_marginBottom="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/divider">
+    </View>
+</FrameLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
